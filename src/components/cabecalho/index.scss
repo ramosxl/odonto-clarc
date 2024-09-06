@@ -1,0 +1,63 @@
+.cbc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    height: 80px; // Altura definida em pixels
+    width: 100%; // Largura completa
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); 
+  
+    .logo {
+      img {
+        width: 200px;
+        margin: 50px;
+    }
+    }
+  
+    .nav {
+      display: flex;
+  
+      .nav-list {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+  
+        .nav-item {
+          a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            height: 100%; // Links ocupam a altura total do header
+
+            &:hover{
+                transition: 0.5;
+                text-decoration: underline;
+            }
+  
+            &.btn-agende {
+              background-color: #02445c;
+              color: white;
+              padding: 8px 16px; // Tamanho do botão ajustado
+              border-radius: 50px;
+              padding: 12px;
+              text-decoration: none;
+              display: flex;
+              align-items: center; // Centraliza o texto verticalmente
+              margin-right: 30px;
+  
+              &:hover {
+                transform: scale(0.94);
+                transition: 0.6s;
+                background-color: #35748b;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

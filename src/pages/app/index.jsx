@@ -17,7 +17,7 @@ export default function App() {
         <nav className="sevicos">
           <ul className="listaServicos">
             <li className="servicoItem"><a href="#">Implate Dentário</a></li>
-            <li className="servicoItem"><a href="#">Implate Dentári</a></li>
+            <li className="servicoItem"><a href="#">Implate Dentário</a></li>
             <li className="servicoItem"><a href="#">Implate Dentário</a></li>
             <li className="servicoItem"><a href="#">Implate Dentário</a></li>
             <li className="servicoItem"><a href="#">Implate Dentário</a></li>

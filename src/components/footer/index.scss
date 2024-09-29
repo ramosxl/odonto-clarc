@@ -1,0 +1,93 @@
+.footer {
+    display: flex;
+    justify-content: space-between; // Espaça a parte esquerda e direita
+    padding: 20px;
+    background-color: #02445c;
+  
+    .esq{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .dir{
+      color: #fff;
+      font-size: 20px;
+
+      display: flex;
+      flex-direction: column; // Coloca os elementos em coluna (um embaixo do outro)
+
+      justify-content: center; // Centraliza verticalmente
+
+      padding: 0 80px;
+
+      .endereco, .telefone{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        p{
+          margin: 0;
+          padding-left: 10px;
+          font-size: 16px;
+        }
+      }
+    }
+    .esq {
+
+      img{
+        padding-left: 5px;
+        width: 45%;
+      }
+      .social-icons {
+        display: flex;
+        
+        gap: 30px; // Espaçamento entre os ícones sociais
+        margin: 10px 0;
+        
+        .social {
+          background-color: #ffffff;
+
+          width: 42px;
+          
+          padding: 8px;
+          border-radius: 50%;
+          font-size: 20px;
+          color: #02445c;
+          text-decoration: none;
+          transition: background-color 0.5s, color 0.5s, transform 0.5s, box-shadow 0.5s;
+        }
+        .social:hover {
+          background-color: #efefef;
+          color: #02445c;
+          transition: background-color 0.5s, color 0.5s, transform 0.5s; // adicione 'transform' à transição
+          transform: scale(1.05); // aumenta a escala para 105%
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+      }
+
+      .agendar:hover {
+        background-color: #efefef;
+        color: #02445c;
+        transition: background-color 0.5s, color 0.5s, transform 0.5s; // adicione 'transform' à transição
+        transform: scale(1.05); // aumenta a escala para 105%
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      }
+    
+  
+      .agendar {
+        background-color: #ffffff;
+        color: #02445c;
+        padding: 8px 16px; // Tamanho do botão ajustado
+        border-radius: 50px;
+        padding: 12px;
+        text-decoration: none;
+        display: flex;
+        align-items: center; // Centraliza o texto verticalmente
+        margin-right: 30px;
+        transition: 0.6s;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      }
+    }
+       
+  }
+  

@@ -1,0 +1,2 @@
+Colocar o bgl de transition em todos os links
+colocar links nos <a>

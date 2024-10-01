@@ -1,12 +1,17 @@
 import Cabecalho from '../../components/cabecalho';
 import Faixa from '../../components/faixa';
+import Footer from '../../components/footer/index.jsx';
 import './index.scss';
 
 
-export default function App() {
+export default function QuemSomos() {
   return (
-    <div className="App">
+    <div className="QuemSomos">
       <Cabecalho></Cabecalho>
+
+      <div className="faixa">
+        <h1>Quem Somos</h1>
+      </div>
       
       <p>Na nossa clínica odontológica, fundamos nossa história em  superação e dedicação. Liderada pela Dra. Sheyla, nossa fundadora, transformamos desafios em  conquistas e oferecemos cuidados dentários com excelência e empatia. Com tecnologia avançada e uma abordagem personalizada, priorizamos o bem-estar de cada paciente e celebramos cada sorriso como uma vitória. Estamos aqui para cuidar de você com a paixão e o compromisso que definem nossa trajetória.</p>
 
@@ -16,6 +21,7 @@ export default function App() {
 
       <img src="/assets/images/foto.jpg" alt="" />
       
+      <Footer></Footer>
     </div>
   );
 }

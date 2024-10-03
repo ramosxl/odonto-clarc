@@ -4,7 +4,8 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-      margin: 30px; 
+        padding: 30px;
+      background-color: #F1F1F1;
   
       .lista {
         display: flex;
@@ -16,18 +17,18 @@
         .lista-item {
           width: 466px;  
           margin: 10px;
-          background-color: #f0f0f0; 
+          background-color: #ffffff; 
           padding: 70px;
           text-align: center;
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-          border-radius: 5px; 
+          border-radius: 10px; 
           cursor: pointer; 
   
           
             transition: background-color 0.5s, color 0.5s, transform 0.2s; 
           
             &:hover {
-              background-color: #e0e0e0; 
+              background-color: #b1b1b1; 
               transform: scale(1.02); 
             }
           

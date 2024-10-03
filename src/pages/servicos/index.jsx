@@ -48,21 +48,3 @@ export default function Servicos() {
 }
 
 
-
-
-// export default function Servicos() {
-//   return (
-//     <div className="Servicos">
-//       <Cabecalho></Cabecalho>
-//       <div className="faixa">
-//         <h1>Serviços</h1>
-//       </div>
-//       <div className="itens">
-        
-//       </div>
-//       <Footer></Footer>
-//     </div>
-//   );
-// }
-
-

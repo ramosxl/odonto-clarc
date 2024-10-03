@@ -1,8 +1,10 @@
 .Servicos {
   
     .itens {
-      margin: 20px auto; // Margem para centralizar
-      max-width: 800px; // Limita a largura da lista
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      margin: 30px; 
   
       .lista {
         display: flex;
@@ -12,37 +14,38 @@
         margin-bottom: 200px; 
   
         .lista-item {
-          width: calc(33.33% - 10px);  
-          margin: 5px;
-          background-color: #f0f0f0; // Cor de fundo dos itens
+          width: 466px;  
+          margin: 10px;
+          background-color: #f0f0f0; 
           padding: 70px;
           text-align: center;
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Sombra leve nos itens
-          border-radius: 5px; // Borda arredondada
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+          border-radius: 5px; 
           cursor: pointer; 
   
-          &:hover {
-            background-color: #e0e0e0; // Cor de fundo ao passar o mouse
-          }
+          
+            transition: background-color 0.5s, color 0.5s, transform 0.2s; 
+          
+            &:hover {
+              background-color: #e0e0e0; 
+              transform: scale(1.02); 
+            }
+          
+          
   
           &.ver-mais {
-            background-color: #28a745; // Cor de fundo para o botão "Ver mais"
-            color: white; // Cor do texto para o botão "Ver mais"
-            margin-top: 10px; // Margem para separar do restante da lista
-  
-            &:hover {
-              background-color: #218838; // Cor ao passar o mouse
-            }
+            background-color: #c0c0c0; 
+            color: rgb(0, 0, 0); 
+            margin-top: 10px;
+ 
+           
           }
   
           &.ver-menos {
-            background-color: #dc3545; // Cor de fundo para o botão "Ver menos"
-            color: white; // Cor do texto para o botão "Ver menos"
-            margin-top: 10px; // Margem para separar do restante da lista
+            background-color: #c0c0c0; 
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
   
-            &:hover {
-              background-color: #c82333; // Cor ao passar o mouse
-            }
           }
         }
       }

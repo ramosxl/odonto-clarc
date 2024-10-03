@@ -6,15 +6,15 @@ import Footer from '../../components/footer';
 
 
 export default function Servicos() {
-  const [quantidadeVisivel, setQuantidadeVisivel] = useState(5); // Começa mostrando 5 itens
+  const [quantidade, setQuantidade] = useState(5); 
   const itens = ['Serviço 1', 'Serviço 2', 'Serviço 3', 'Serviço 4', 'Serviço 5', 'Serviço 6', 'Serviço 7', 'Serviço 8'];
 
   const verMais = () => {
-    setQuantidadeVisivel(prev => Math.min(prev + 3, itens.length)); // Incrementa até o total de itens
+    setQuantidade(prev => Math.min(prev + 3, itens.length));
   };
 
   const verMenos = () => {
-    setQuantidadeVisivel(5); // Reseta para 5 itens
+    setQuantidade(5); 
   };
 
   return (
@@ -25,17 +25,17 @@ export default function Servicos() {
       </div>
       <div className="itens">
         <ul className="lista">
-          {itens.slice(0, quantidadeVisivel).map((item, index) => (
+          {itens.slice(0, quantidade).map((item, index) => (
             <li key={index} className="lista-item">
               {item}
             </li>
           ))}
-          {quantidadeVisivel < itens.length && quantidadeVisivel === 5 && (
+          {quantidade < itens.length && quantidade === 5 && (
             <li className="lista-item ver-mais" onClick={verMais}>
               Ver mais
             </li>
           )}
-          {quantidadeVisivel >= 8 && (
+          {quantidade >= 8 && (
             <li className="lista-item ver-menos" onClick={verMenos}>
               Ver menos
             </li>

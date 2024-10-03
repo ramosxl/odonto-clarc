@@ -3,14 +3,13 @@
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
-    height: 80px; 
+    padding: 15px 30px; 
     width: 100%; 
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); 
   
     .logo {
       img {
         width: 200px;
-        margin: 50px;
     }
     }
   
@@ -27,27 +26,24 @@
         .nav-item {
           a {
             text-decoration: none;
-            color: #333;
+            font-weight: bold;
+            color: #000000;
             font-weight: bold;
             display: flex;
             align-items: center;
-            height: 100%; // Links ocupam a altura total do header
-
-            &:hover{
-                transition: 0.5;
-                text-decoration: underline;
-            }
+            font-size: 15px;
+            padding: 0 15px;
+            height: 100%;
   
             &.btn-agende {
               background-color: #02445c;
               color: white;
-              padding: 8px 16px; // Tamanho do botão ajustado
               border-radius: 50px;
-              padding: 12px;
+              padding: 15px;
               text-decoration: none;
               display: flex;
               align-items: center; // Centraliza o texto verticalmente
-              margin-right: 30px;
+              margin-right: 10px;
               transition: 0.6s;
               box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
               &:hover {

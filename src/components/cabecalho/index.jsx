@@ -11,12 +11,12 @@ export default function Cabecalho(){
       <nav className="nav">
         <ul className="nav-list">
           <li className="nav-item"><Link to='/'>Home</Link></li>
+          <li className="nav-item"><Link to='/servicos'>Serviços</Link></li>
           <li className="nav-item"><Link to='/quemsomos'>Quem Somos</Link></li>
-          <li className="nav-item"><Link>Serviços</Link></li>
           <li className="nav-item">
-            <a href="#" className="btn-agende">
+            <Link className='btn-agende' to='/contato'>
               Agende Sua Avaliação
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

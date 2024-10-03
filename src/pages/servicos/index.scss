@@ -1,0 +1,51 @@
+.Servicos {
+  
+    .itens {
+      margin: 20px auto; // Margem para centralizar
+      max-width: 800px; // Limita a largura da lista
+  
+      .lista {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 200px; 
+  
+        .lista-item {
+          width: calc(33.33% - 10px);  
+          margin: 5px;
+          background-color: #f0f0f0; // Cor de fundo dos itens
+          padding: 70px;
+          text-align: center;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Sombra leve nos itens
+          border-radius: 5px; // Borda arredondada
+          cursor: pointer; 
+  
+          &:hover {
+            background-color: #e0e0e0; // Cor de fundo ao passar o mouse
+          }
+  
+          &.ver-mais {
+            background-color: #28a745; // Cor de fundo para o botão "Ver mais"
+            color: white; // Cor do texto para o botão "Ver mais"
+            margin-top: 10px; // Margem para separar do restante da lista
+  
+            &:hover {
+              background-color: #218838; // Cor ao passar o mouse
+            }
+          }
+  
+          &.ver-menos {
+            background-color: #dc3545; // Cor de fundo para o botão "Ver menos"
+            color: white; // Cor do texto para o botão "Ver menos"
+            margin-top: 10px; // Margem para separar do restante da lista
+  
+            &:hover {
+              background-color: #c82333; // Cor ao passar o mouse
+            }
+          }
+        }
+      }
+    }
+  }
+  

@@ -6,7 +6,7 @@ export default function Cabecalho(){
   return (
     <div className="cbc">
       <div className="logo">
-        <Link to='/'><img src="/assets/images/ODC.jpg" alt="Logo" /></Link>
+        <Link to='/'><img src="/assets/images/odc.png" alt="Logo" /></Link>
       </div>
       <nav className="nav">
         <ul className="nav-list">

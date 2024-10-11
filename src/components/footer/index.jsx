@@ -12,7 +12,7 @@ export default function Footer(){
   return (
     <div className="footer">
         <div className="esq">
-            <img src="/assets/images/ODC.jpg" alt="" className="logo" width={200} />
+            <img src="/assets/images/odc-branca.png" alt="" className="logo" width={200} />
             <div className="social-icons">
                 <a href="" className="social"><FaInstagram /></a>
                 <a href="" className="social"><FaFacebookF /></a>

@@ -1,55 +1,49 @@
 .Servicos {
-  
-    .itens {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 30px;
-      background-color: #F1F1F1;
-  
-      .lista {
-        display: flex;
-        flex-wrap: wrap;
-        list-style-type: none;
-        padding: 0;
-        margin-bottom: 200px; 
-  
-        .lista-item {
-          width: 466px;  
-          margin: 10px;
-          background-color: #ffffff; 
-          padding: 70px;
-          text-align: center;
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-          border-radius: 10px; 
-          cursor: pointer; 
-  
-          
-            transition: background-color 0.5s, color 0.5s, transform 0.2s; 
-          
-            &:hover {
-              background-color: #b1b1b1; 
-              transform: scale(1.02); 
-            }
-          
-          
-  
-          &.ver-mais {
-            background-color: #c0c0c0; 
-            color: rgb(0, 0, 0); 
-            margin-top: 10px;
- 
-           
-          }
-  
-          &.ver-menos {
-            background-color: #c0c0c0; 
-            color: rgb(0, 0, 0);
-            margin-top: 10px;
-  
-          }
+  .faixa {
+    text-align: center;
+    margin-bottom: 20px;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .itens {
+    background-color: #F1F1F1;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+
+    .lista {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      list-style-type: none;
+      padding: 0;
+      width: 100%;
+      max-width: 1200px;
+      margin-bottom: 200px; 
+
+      .lista-item {
+        background-color: #ffffff;
+        padding: 70px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.5s, color 0.5s, transform 0.2s;
+
+        &:hover {
+          background-color: #b1b1b1;
+          transform: scale(1.02);
+        }
+
+        &.ver-mais, &.ver-menos {
+          background-color: #c0c0c0;
+          color: rgb(0, 0, 0);
+          margin-top: 10px;
         }
       }
     }
   }
-  
+}

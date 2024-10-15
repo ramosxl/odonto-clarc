@@ -14,21 +14,21 @@ export default function App() {
       <div className="faixa">
         <h1>Nossos Serviços</h1>
       </div>
-        ***slider de serviços***
+      ***slider de serviços***
       <section className='secao1'>
         <img src="/assets/images/sorriso.jpg" alt="" />
         <p>
-        Na OdontoClarc, oferecemos cuidados odontológicos de qualidade superior, combinando tecnologia moderna e um atendimento caloroso. Nossa equipe especializada proporciona uma ampla gama de serviços, desde limpezas preventivas até tratamentos ortodônticos avançados, garantindo resultados duradouros e satisfatórios.        
+          Na OdontoClarc, oferecemos cuidados odontológicos de qualidade superior, combinando tecnologia moderna e um atendimento caloroso. Nossa equipe especializada proporciona uma ampla gama de serviços, desde limpezas preventivas até tratamentos ortodônticos avançados, garantindo resultados duradouros e satisfatórios.
         </p>
       </section>
       <section className='secao2'>
         <p>
-        Na OdontoClarc, oferecemos cuidados odontológicos de qualidade superior, combinando tecnologia moderna e um atendimento caloroso. Nossa equipe especializada proporciona uma ampla gama de serviços, desde limpezas preventivas até tratamentos ortodônticos avançados, garantindo resultados duradouros e satisfatórios.        
+          Na OdontoClarc, oferecemos cuidados odontológicos de qualidade superior, combinando tecnologia moderna e um atendimento caloroso. Nossa equipe especializada proporciona uma ampla gama de serviços, desde limpezas preventivas até tratamentos ortodônticos avançados, garantindo resultados duradouros e satisfatórios.
         </p>
         <img src="/assets/images/foto.jpg" alt="" />
       </section>
       <Footer></Footer>
-      
+
     </div>
   );
 }

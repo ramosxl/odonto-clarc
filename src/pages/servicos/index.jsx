@@ -7,7 +7,7 @@ import Footer from '../../components/footer';
 
 export default function Servicos() {
   const [quantidade, setQuantidade] = useState(5); 
-  const itens = ['Serviço 1', 'Serviço 2', 'Serviço 3', 'Serviço 4', 'Serviço 5', 'Serviço 6', 'Serviço 7', 'Serviço 8'];
+  const itens = ['Canal', 'Extração', 'Ortodontia', 'Limpeza', 'Clareamento', 'Implante', 'Próteses', 'Restauração'];
 
   const verMais = () => {
     setQuantidade(prev => Math.min(prev + 3, itens.length));

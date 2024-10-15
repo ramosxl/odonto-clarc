@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.scss';
+import { Link } from 'react-router-dom';
 
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
@@ -17,9 +18,11 @@ export default function Footer(){
                 <a href="" className="social"><FaInstagram /></a>
                 <a href="" className="social"><FaFacebookF /></a>
                 <a href="" className="social"><FaLinkedinIn /></a>
-                <a href="" className="social"><FaTiktok /></a>
             </div>
-            <a href="" className="agendar">Agende sua avaliação</a>
+            <Link to='/contato'>
+              <a href="" className="agendar">Agende Sua Pré Avaliação</a>
+            </Link>
+            
         </div>
         <div className="dir">
           <div className="endereco">
@@ -28,7 +31,7 @@ export default function Footer(){
           </div>
           <div className="telefone">
             <FaPhoneAlt />
-            <p>(11) 974618123</p>
+            <p>(11) 9 7461-8123</p>
           </div>
         </div>
     </div>

@@ -15,7 +15,7 @@ export default function Cabecalho(){
           <li className="nav-item"><Link to='/quemsomos'>Quem Somos</Link></li>
           <li className="nav-item">
             <Link className='btn-agende' to='/contato'>
-              Agende Sua Avaliação
+              Agende Sua Pré Avaliação
             </Link>
           </li>
         </ul>

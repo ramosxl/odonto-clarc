@@ -33,7 +33,8 @@ export default function Contato() {
               id="dateInput"
             />
           </div>
-          <input type="text" className="msg" placeholder="Deixe sua mensagem" />
+          <textarea className="msg" placeholder="Deixe sua mensagem" rows="4"></textarea>
+
           <button type="button" className='enviar'>Enviar</button>
         </div>
         <div className="dir">

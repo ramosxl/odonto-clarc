@@ -3,6 +3,7 @@ import Faixa from '../../components/faixa';
 import './index.scss';
 import { Link } from 'react-router-dom';
 import Footer from '../../components/footer/index.jsx';
+import Carrossel from '../../components/carrosel/index.jsx';
 
 export default function App() {
   return (
@@ -14,7 +15,7 @@ export default function App() {
       <div className="faixa">
         <h1>Nossos Serviços</h1>
       </div>
-      ***slider de serviços***
+      <Carrossel/>
       <section className='secao1'>
         <img src="/assets/images/sorriso.jpg" alt="" />
         <p>

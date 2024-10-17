@@ -1,7 +1,6 @@
 .Servicos {
   .faixa {
     text-align: center;
-    margin-bottom: 20px;
 
     h1 {
       font-size: 2rem;
@@ -10,9 +9,11 @@
 
   .itens {
     background-color: #F1F1F1;
-    padding: 30px;
+    padding: 90px;
+    margin-bottom: 180px;
     display: flex;
     justify-content: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 
     .lista {
       display: grid;
@@ -22,20 +23,20 @@
       padding: 0;
       width: 100%;
       max-width: 1200px;
-      margin-bottom: 200px; 
+      margin-bottom: 25px; 
 
       .lista-item {
         background-color: #ffffff;
         padding: 70px;
         text-align: center;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         cursor: pointer;
         transition: background-color 0.5s, color 0.5s, transform 0.2s;
 
         &:hover {
-          background-color: #b1b1b1;
-          transform: scale(1.02);
+          background-color: #dddddd;
+          transform: scale(1.05);
         }
 
         &.ver-mais, &.ver-menos {

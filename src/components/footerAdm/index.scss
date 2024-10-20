@@ -1,0 +1,40 @@
+.footerADM {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  background-color: #02445c;
+
+  .esq {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    img {
+      width: 200px;
+    }
+  }
+
+  .dir {
+    color: #fff;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 0 80px;
+
+    .endereco,
+    .telefone {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      p {
+        margin: 0;
+        padding-left: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+}

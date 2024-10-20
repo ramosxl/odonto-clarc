@@ -4,11 +4,11 @@ import './index.scss';
 import { Link } from 'react-router-dom';
 import Footer from '../../components/footer/index.jsx';
 
-export default function App() {
+export default function PreConsulta() {
   return (
-    <div className="App">
+    <div className="Pre">
       <Cabecalho></Cabecalho>
-        <img src="/assets/images/" alt="" />
+        <img src="/assets/images/odc-min" alt="" />
 
       <Footer></Footer>
     </div>

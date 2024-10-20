@@ -1,0 +1,12 @@
+.NotFound{
+    background-color: #eeeeee;
+    margin: 60px auto;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+    width: 70%;
+    .voltar{
+        align-items: center;
+    }
+}

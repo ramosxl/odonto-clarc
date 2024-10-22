@@ -17,7 +17,7 @@ export default function Rotas() {
         <Route path="/servicos" element={<Servicos />}/>
         <Route path='/quemsomos' element={<QuemSomos />} />
         <Route path='/contato' element={<Contato />} />
-        <Route path='/login' element={<Login />} />
+        <Route path='/adm/login' element={<Login />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </Router>

@@ -15,10 +15,12 @@ export default function Painel() {
       <Link to="/">
       <button type="button" className='voltar'><IoChevronBackOutline />Sair</button>
       </Link>
-      <h1 className='Nome'>Nome Funcionário</h1> 
+      <h1 className='Nome'>Olá, --Nome Funcionário--!</h1> 
       <div className="fundo"> 
         <h1>Painel Administrativo</h1> 
         <button type='button' className='botao'>Consultar Pré-agendamentos</button>
+        <button type='button' className='botao'>Consultar Agenda</button>
+        <button type='button' className='botao'>Consultar Agenda</button>
         <button type='button' className='botao'>Consultar Agenda</button>
       </div>
       <FooterADM />

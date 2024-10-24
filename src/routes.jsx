@@ -8,6 +8,7 @@ import Login from './pages/adm/login';
 import NotFound from './pages/notFound';
 import PreConsulta from './pages/preConsulta';
 import Painel from './pages/adm/painel';
+import Individual from './pages/servicos/individual';
 
 
 
@@ -17,6 +18,7 @@ export default function Rotas() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/servicos" element={<Servicos />}/>
+        <Route path='/servicotal' element={<Individual />} />
         <Route path='/quemsomos' element={<QuemSomos />} />
         <Route path='/contato' element={<Contato />} />
         <Route path='/adm/login' element={<Login />} />

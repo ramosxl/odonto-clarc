@@ -6,6 +6,8 @@ import Servicos from './pages/servicos';
 import Contato from './pages/contato';
 import Login from './pages/adm/login';
 import NotFound from './pages/notFound';
+import PreConsulta from './pages/preConsulta';
+import Painel from './pages/adm/painel';
 
 
 
@@ -19,6 +21,8 @@ export default function Rotas() {
         <Route path='/contato' element={<Contato />} />
         <Route path='/adm/login' element={<Login />} />
         <Route path='*' element={<NotFound />} />
+        <Route path='/pre' element={<PreConsulta />} />
+        <Route path='/p' element={<Painel />} />
       </Routes>
     </Router>
   );

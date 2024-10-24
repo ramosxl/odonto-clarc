@@ -20,7 +20,6 @@ export default function App() {
       <section className='secao1'>
         <img src="/assets/images/sorriso.jpg" alt="" />
         <p>
-          <h1>AAAAAAA</h1>
           Na OdontoClarc, oferecemos cuidados odontológicos de qualidade superior, combinando tecnologia moderna e um atendimento caloroso. Nossa equipe especializada proporciona uma ampla gama de serviços, desde limpezas preventivas até tratamentos ortodônticos avançados, garantindo resultados duradouros e satisfatórios.
         </p>
       </section>

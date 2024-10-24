@@ -3,6 +3,7 @@ import Faixa from '../../components/faixa';
 import './index.scss';
 import { Link } from 'react-router-dom';
 import Footer from '../../components/footer/index.jsx';
+import Zap from '../../components/zapzap/index.jsx';
 
 export default function PreConsulta() {
   return (
@@ -15,6 +16,7 @@ export default function PreConsulta() {
         <Link to="/">
           <button className='enviar'>Voltar para a página inicial</button>
         </Link>
+        <Zap/>
       </div>      
       <Footer></Footer>
     </div>

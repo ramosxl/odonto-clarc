@@ -16,3 +16,80 @@
         width: 90%;
     }
 }
+
+@media (max-width:1440px) {
+    .QuemSomos {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width:1280px) {
+    .QuemSomos {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width:1024px) {
+    .QuemSomos {
+      width: 100%;
+      .faixa{
+        font-size: 12px;
+        padding: 25px;
+      }
+      p{
+        font-size: 20px;
+      }
+    }
+  }
+  
+  @media (max-width:912px) {
+    .QuemSomos {
+        width: 100%;
+        .secao{
+            flex-direction: column;
+            align-items: center;
+            p{
+              padding: 20px;
+            }
+            img{    
+              width: 60vw;
+            }
+        }
+    }
+  }
+  
+  
+  
+  @media (max-width:540px) {
+    .QuemSomos {
+      width: 100%;
+      .secao{
+        img{
+            display: none;
+        }
+        p{
+          text-align: start;
+          padding: 0px;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width:430px) {
+    .QuemSomos {
+      width: 100%;
+      .secao{
+        img{
+          display: none;
+        }
+      }
+    }
+  }
+  
+  
+  @media (max-width:375px) {
+    .QuemSomos {
+      width: 100%;
+    }
+  }

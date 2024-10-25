@@ -4,6 +4,7 @@ import Faixa from '../../components/faixa';
 import './index.scss';
 import { Link } from 'react-router-dom';
 import Footer from '../../components/footer/index.jsx';
+import { IoChevronBackOutline } from "react-icons/io5";
 
 export default function Contato() {
   const [minDate, setMinDate] = useState('');
@@ -16,8 +17,8 @@ export default function Contato() {
   return (
     <div className="Contato">
       <Cabecalho />
-      <Link to='/'>
-        <button type="button" className='voltar'>Voltar</button>
+      <Link to="/">
+      <button type="button" className='voltar'><IoChevronBackOutline />Sair</button>
       </Link>
       <div className="fundo">
         <div className="esq">
@@ -25,14 +26,14 @@ export default function Contato() {
           <input type="text" className="text" placeholder="Sobrenome" />
           <input type="text" className="text" placeholder="E-mail" />
           <input type="text" className="text" placeholder="Telefone" />
-          <div className="input-data">
+          
             <input
               type="date"
               className="date"
               min={minDate}
               id="dateInput"
             />
-          </div>
+          
           <textarea className="msg" placeholder="Deixe sua mensagem" rows="4"></textarea>
 
           <button type="button" className='enviar'>Enviar</button>

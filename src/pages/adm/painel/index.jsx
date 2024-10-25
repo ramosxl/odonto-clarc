@@ -20,7 +20,7 @@ export default function Painel() {
         <h1>Painel Administrativo</h1> 
         <button type='button' className='botao'>Consultar Pré-agendamentos</button>
         <button type='button' className='botao'>Consultar Agenda</button>
-        <button type='button' className='botao'>Consultar Agenda</button>
+        <button type='button' className='botao'>Consultar Pacientes</button>
         <button type='button' className='botao'>Consultar Agenda</button>
       </div>
       <FooterADM />

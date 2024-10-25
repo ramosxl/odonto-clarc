@@ -37,10 +37,10 @@
       .esq {
         display: flex;
         flex-direction: column;
-        margin-left: 50px;
+        
         justify-content: center; 
         width: 100%;  
-        padding: 20px;
+        padding: 60px;
         
         
         input {
@@ -74,11 +74,9 @@
             border-radius: 25px;
             transition: box-shadow 0.3s ease; 
             cursor: auto;
-            height: 120px; // Define uma altura maior
+            height: 120px; 
         
             resize: none;
-        
-            // Estilo quando o campo está focado
             &:focus {
                 box-shadow: inset 0 -5px 5px rgba(255, 255, 255, 0.5), inset 0 5px 5px rgba(0, 0, 0, 0.1); 
             }
@@ -90,13 +88,12 @@
             border: none;
             color: #fff;
             align-items: center;
-
-            text-align: center;
+            justify-content: center;
             
             background-color: #02445c;
             border-radius: 25px;
             padding: 20px;
-            width: 20%;
+            width: 100px;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
             font-weight: bold;
             cursor: pointer;
@@ -118,3 +115,99 @@
     }
   }
   
+@media (max-width:1440px) {
+    .Contato {
+        width: 100%;
+        
+    }
+}
+
+@media (max-width:1280px) {
+    .Contato {
+        width: 100%;
+        .fundo{
+            .dir{
+                img{
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .Contato {
+        width: 100%;
+        .fundo{
+            height: 500px;
+            .esq{
+                input{
+                    padding: 10px;
+                }
+                height: 400px;
+            }
+            .dir{
+                img{
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:912px) {
+    .Contato {
+        width: 100%;
+        .fundo{
+            height: 450px;
+            .esq{
+                align-items: center;
+                justify-content: center;
+                .input-data{
+                    width: 100%;
+                    align-items: center;
+                justify-content: center;
+                }
+                input{
+                    width: 100%;
+                }
+                .enviar{
+                    margin-top: 20px;
+                    
+                }
+            }
+            .dir{   
+               display: none;
+            }
+        }
+    }
+}
+
+@media (max-width:540px) {
+    .Contato {
+        width: 100%;
+        .fundo{
+            
+            .esq{
+                padding: 40px;
+                .enviar{
+                    margin-top: 20px;
+                    padding: 15px;
+                }
+            }
+            }
+    }
+}
+
+@media (max-width:430px) {
+    .Contato {
+        width: 100%;
+    }
+}
+
+
+@media (max-width:375px) {
+    .Contato {
+        width: 100%;
+    }
+}

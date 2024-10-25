@@ -9,7 +9,7 @@
 
   .logo {
     img {
-      width: 200px;
+      width: 240px;
     }
   }
 
@@ -63,5 +63,68 @@
         }
       }
     }
+  }
+}
+
+@media (max-width:1440px) {
+  .cbc {
+    
+  }
+}
+
+@media (max-width:1280px) {
+  .cbc {
+        
+  }
+}
+
+@media (max-width:1024px) {
+  .cbc {
+    
+  }
+}
+
+@media (max-width:912px) {
+  .cbc {
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    .nav{
+      display: none;
+    }
+    .logo{
+      img{
+        width: 180px; 
+      }
+    }
+  }
+}
+@media (max-width:640px) {
+  .cbc {
+    
+  }
+}
+
+@media (max-width:540px) {
+  .cbc {
+    .logo{
+      img{
+       width: 170px; 
+      }
+    }
+  }
+}
+
+@media (max-width:430px) {
+  .cbc {
+
+  }
+}
+
+
+@media (max-width:375px) {
+  .cbc {
+    width: 100%;
+    
   }
 }

@@ -16,7 +16,6 @@ export default function App() {
       <div className="faixa">
         <h1>Nossos Serviços</h1>
       </div>
-      <Resizable/>
       <section className='secao1'>
         <img src="/assets/images/sorriso.jpg" alt="" />
         <p>

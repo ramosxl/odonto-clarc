@@ -1,2 +1,8 @@
 botão de voltar para a pagina anterior
 links dos serviços
+
+Responsividade abaixo de 375
+
+O input der mensagem ta dando problema no 1024
+
+Responsividade pages ADM

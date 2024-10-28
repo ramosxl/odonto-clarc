@@ -5,14 +5,54 @@ import { Link } from 'react-router-dom';
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
-import { FaTiktok } from "react-icons/fa6";
 import { MdLocationPin } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { BsInstagram } from "react-icons/bs";
 
 export default function Footer(){
   return (
     <div className="footer">
+      <div className="content">
         <div className="esq">
+          <img src="/assets/images/odc-branca.png" alt="" />
+          <div className='social'>
+            <a href="" className="social-icon"><BsInstagram /></a>
+            <a href="" className="social-icon"><FaFacebookF /></a>
+            <a href="" className="social-icon"><FaLinkedinIn /></a>
+          </div>
+        </div>
+        <ul className='lista'>
+          <li>
+            <h3>Mapa do Site</h3>
+          </li>
+          <li>
+            <Link to='/'>Home</Link>
+          </li>
+          <li>
+            <Link to='/servicos'>Serviços</Link>
+          </li>
+          <li>
+            <Link to='/quemsomos'>Quem Somos</Link>
+          </li>
+          <li>
+            <Link to='/contato'>Contato</Link>
+          </li>
+        </ul>
+        <div className="contato">
+          <h3>Contato</h3>
+          <div className="number">
+            <FaPhoneAlt />
+            <span>(11) 97461-8123</span>
+          </div>
+          <div className="email">
+            <MdEmail />
+            <span>contato@odontoclarc.com.br</span>
+          </div>
+        </div>
+      </div>
+
+        {/* <div className="esq">
             <img src="/assets/images/odc-branca.png" alt="" className="logo" width={200} />
             <div className="social-icons">
                 <a href="" className="social"><FaInstagram /></a>
@@ -25,16 +65,35 @@ export default function Footer(){
             
         </div>
         <div className="dir">
+          <div className="lista">  
+            <ul className="list">
+              <li>
+                <h3>Mapa do Site</h3>
+              </li>
+              <li>
+                <Link to='/'>Home</Link>
+              </li>
+              <li>
+                <Link to='/servicos'>Serviços</Link>
+              </li>
+              <li>
+                <Link to='/quemsomos'>Quem Somos</Link>
+              </li>
+              <li>
+                <Link to='/contato'>Pré Avaliação</Link>
+              </li>
+            </ul>
+          </div>
           <div className="endereco">
             <MdLocationPin />
             <p>Av. Paulo Guilguer Reimberg, 378</p>
           </div>
           <div className="telefone">
             <FaPhoneAlt />
-            <p>(11) 97461-8123</p>
+            <p>(11) 9 7461-8123</p>
           </div>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.408588454297!2d-46.71567572061772!3d-23.770485867278456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce492c09c36583%3A0x3678805288b49c4b!2sAv.%20Paulo%20Guilguer%20Reimberg%2C%20378%20-%20Jardim%20Maria%20Fernandes%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004858-570!5e0!3m2!1spt-BR!2sbr!4v1729013562780!5m2!1spt-BR!2sbr"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        </div> */}
     </div>
   );
 };

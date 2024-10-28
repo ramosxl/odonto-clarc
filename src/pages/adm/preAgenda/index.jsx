@@ -8,19 +8,17 @@
   import { IoChevronBackOutline } from "react-icons/io5";
 
 
-  export default function Painel() {
+  export default function preAgenda() {
     return (
-      <div className="painel">
+      <div className="preAgenda">
         <Cabecalho_ADM />
-        <Link to="/">
-        <button type="button" className='voltar'><IoChevronBackOutline />Log Out</button>
+        <Link to="/adm/painel">
+        <button type="button" className='voltar'><IoChevronBackOutline />Sair</button>
         </Link>
-        <h1 className='Nome'>Olá, --Nome Funcionário--!</h1> 
         <div className="fundo"> 
-          <h1>Painel Administrativo</h1> 
-          <Link to='/adm/preAgenda'><button type='button' className='botao'>Consultar Pré-agendamentos</button></Link>
-          <button type='button' className='botao'>Consultar Agenda</button>
-          <button type='button' className='botao'>Consultar Pacientes</button>
+          <h2>Pré-Agendamentos</h2>
+          <input type="date" name="" className='data' />
+          <button>Mostrar</button>
         </div>
         <FooterADM />
       </div>

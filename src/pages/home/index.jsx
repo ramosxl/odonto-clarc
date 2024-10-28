@@ -5,6 +5,7 @@ import Resizable from '../../components/slider/index.jsx';
 import { Link } from 'react-router-dom';
 import Footer from '../../components/footer/index.jsx';
 import Carrossel from '../../components/carrosel/index.jsx';
+import Zap from '../../components/zapzap/index.jsx';
 
 export default function App() {
   return (
@@ -29,7 +30,7 @@ export default function App() {
         <img src="/assets/images/foto.jpg" alt="" />
       </section>
       <Footer></Footer>
-
+      <Zap></Zap>
     </div>
   );
 }

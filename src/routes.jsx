@@ -9,6 +9,7 @@ import NotFound from './pages/notFound';
 import PreConsulta from './pages/preConsulta';
 import Painel from './pages/adm/painel';
 import Individual from './pages/servicos/individual';
+import preAgenda from './pages/adm/preAgenda';
 
 
 
@@ -17,14 +18,15 @@ export default function Rotas() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path='*' element={<NotFound />} />
         <Route path="/servicos" element={<Servicos />}/>
         <Route path='/servicotal' element={<Individual />} />
         <Route path='/quemsomos' element={<QuemSomos />} />
         <Route path='/contato' element={<Contato />} />
-        <Route path='/adm/login' element={<Login />} />
-        <Route path='*' element={<NotFound />} />
         <Route path='/pre' element={<PreConsulta />} />
-        <Route path='/p' element={<Painel />} />
+        <Route path='/adm/login' element={<Login />} />
+        <Route path='/adm/painel' element={<Painel />} />
+        <Route path='/a' element={<preAgenda />} /> 
       </Routes>
     </Router>
   );

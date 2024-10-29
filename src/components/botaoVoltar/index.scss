@@ -1,4 +1,4 @@
-.preAgenda {
+.b-voltar {
   .voltar {
     background-color: #71919C;
     border: none;
@@ -24,26 +24,6 @@
       background-color: #66828b;
       transition: background-color 0.5s, color 0.5s, transform 0.5s;
       transform: scale(1.05);
-    }
-  }
-
-  .fundo {
-    background-color: #eeeeee;
-    display: flex;
-    margin-top: 20px;
-    height: 60vh;
-    width: 100%;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-    flex-direction: column;
-
-    h2 {
-  
-      margin: 40px 0 20px 5px;
-    }
-
-    .data {
-      width: 15%;
-      padding: 10px;
     }
   }
 }

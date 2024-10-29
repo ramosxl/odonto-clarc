@@ -18,9 +18,9 @@
         <h1 className='Nome'>Olá, --Nome Funcionário--!</h1> 
         <div className="fundo"> 
           <h1>Painel Administrativo</h1> 
-          <Link to='/adm/preAgenda'><button type='button' className='botao'>Consultar Pré-agendamentos</button></Link>
-          <button type='button' className='botao'>Consultar Agenda</button>
-          <button type='button' className='botao'>Consultar Pacientes</button>
+          <button type='button' className='botao'><Link to='/adm/preagendamentos'>Gerenciar Pré-agendamentos</Link></button>
+          <button type='button' className='botao'><Link to='/adm/agenda'>Gerenciar Agenda</Link></button>
+          <button type='button' className='botao'><Link to='/adm/pacientes'>Gerenciar Pacientes Cadastrados</Link></button>
         </div>
         <FooterADM />
       </div>

@@ -11,6 +11,9 @@ import { MdEmail } from "react-icons/md";
 import { BsInstagram } from "react-icons/bs";
 
 export default function Footer(){
+  const numero = "5511914817025"; 
+  const mensagem = "Olá! Gostaria de mais informações."; 
+  const encodedMessage = encodeURIComponent(mensagem);
   return (
     <div className="footer">
       <div className="content">
@@ -21,6 +24,11 @@ export default function Footer(){
             <a href="" className="social-icon"><FaFacebookF /></a>
             <a href="" className="social-icon"><FaLinkedinIn /></a>
           </div>
+          <Link to='/contato'>
+          <div className='agende'>
+            <a href="">Agende Sua Pré Avaliação</a>
+          </div>
+          </Link>
         </div>
         <ul className='lista'>
           <li>
@@ -43,7 +51,9 @@ export default function Footer(){
           <h3>Contato</h3>
           <div className="number">
             <FaPhoneAlt />
-            <span>(11) 97461-8123</span>
+            <Link to={`https://wa.me/${numero}?text=${encodedMessage}`} target="_blank" rel="noopener noreferrer">
+              <span>(11) 97461-8123</span>
+            </Link>
           </div>
           <div className="email">
             <MdEmail />

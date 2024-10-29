@@ -2,6 +2,7 @@ import Cabecalho from '../../components/cabecalho';
 import Faixa from '../../components/faixa';
 import Footer from '../../components/footer/index.jsx';
 import './index.scss';
+import Zap from '../../components/whatsapp/index.jsx';
 
 
 export default function QuemSomos() {
@@ -28,6 +29,7 @@ export default function QuemSomos() {
 
       
       <Footer></Footer>
+      <Zap/>
     </div>
   );
 }

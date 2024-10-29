@@ -40,10 +40,14 @@
           font-size: 30px;
           margin: 40px 0 25px 0;
         }
-        .botao{
+        button{
           border: none;
           border-radius: 20px;
           box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+          a{
+            text-decoration: none;
+            color: #000;
+          }
 
           margin-top: 20px;
           padding: 10px;

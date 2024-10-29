@@ -2,6 +2,7 @@ import React from 'react';
 import './index.scss'; 
 import Cabecalho from '../../components/cabecalho';
 import Footer from '../../components/footer';
+import Zap from '../../components/whatsapp/index.jsx';
 
 export default function Servicos() {
   const itens = ['Canal', 'Extração', 'Ortodontia', 'Limpeza', 'Clareamento', 'Implante', 'Próteses', 'Restauração', 'Cirurgia'];
@@ -22,6 +23,7 @@ export default function Servicos() {
         </div>
       </div>
       <Footer />
+      <Zap/>
     </div>
   );
 }

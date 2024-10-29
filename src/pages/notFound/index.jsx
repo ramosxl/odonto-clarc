@@ -11,9 +11,12 @@ export default function NotFound() {
       <img src="/assets/images/odc-min.png" alt="" />
       <h1>404</h1>
       <p>Página Não Encontrada</p>
+      
+      <button className='voltar'>
       <Link to="/">
-      <button className='voltar'>Voltar para a página inicial</button>
+      Voltar para a página inicial
       </Link>
+      </button>
     </div>
   );
 }

@@ -34,6 +34,28 @@
           }
         }
       }
+      .agende {
+        background-color: #ffffff;
+        color: #02445c;
+        border-radius: 50px;
+        text-align: center;
+        margin-top: 20px;
+        width: 55%;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+        a{
+          color: #02445c;
+          text-decoration: none;
+        }
+
+        &:hover {
+          transform: scale(1.08);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+      }
     }
   }
   .lista{
@@ -41,8 +63,12 @@
     flex-direction: column;
     gap: 15px;
     list-style: none;
-    color: #fff;
-    text-decoration: none;
+    
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
   }
   .contato{
     display: flex;
@@ -54,6 +80,10 @@
     .number{
       svg{
         margin-right: 10px
+      }
+      a{
+        color: #fff;
+        text-decoration: none;
       }
       flex-direction: row;
     }

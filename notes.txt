@@ -7,4 +7,8 @@ O input der mensagem ta dando problema no 1024
 
 Responsividade pages ADM
 
-O album do Tyler é muito bom
+Arrumar Table do preAgenda
+
+Ver como vai fazer a Agenda e pacientes
+
+Arrumar todos os botões seguindo o botão do cabeçalho

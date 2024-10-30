@@ -84,93 +84,58 @@
       td {
         padding: 15px;
         border-bottom: 1px solid #dddddd;
-      }
-
-      .add-agendamento {
-        color: #007bff; /* Cor do texto do link */
-        text-align: center;
-        cursor: pointer;
-        font-weight: bold;
-        &:hover {
-          text-decoration: underline;
+        &.telefone a {
+          color: #007bff;
+          font-weight: bold;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
   }
-
-  // Estilos do Modal
- //... (restante do seu código CSS)
-
-.modal {
-  display: flex;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-  justify-content: center;
-  align-items: center;
-
-  .modal-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    width: 400px;
-    position: relative;
-
-    .close {
-      color: #aaa;
-      position: absolute;
-      right: 10px;
-      top: 10px;
-      font-size: 28px;
-      font-weight: bold;
-      cursor: pointer;
-
-      &:hover,
-      &:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-      }
-    }
-
-    h2 {
-      margin-bottom: 20px;
-      font-size: 1.5rem;
-      color: #333;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 10px;
-
-      input {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-      }
-    }
-
-    button {
-      background-color: #71919C;
-      color: white;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: 0.3s;
-
-      &:hover {
-        background-color: #66828b;
-      }
-    }
+}
+@media (max-width:1440px) {
+  .Contato {
+      width: 100%;
   }
 }
 
+@media (max-width:1280px) {
+  .Contato {
+      width: 100%;
+  }
+}
+
+@media (max-width:1024px) {
+  .Contato {
+      width: 100%;
+  }
+}
+
+@media (max-width:912px) {
+  .Contato {
+      width: 100%;
+  }
+}
+
+@media (max-width:540px) {
+  .preAgenda {
+      width: 100%;
+      font-size: 0.8rem;
+  }
+}
+
+@media (max-width:430px) {
+  .Contato {
+      width: 100%;
+  }
+}
+
+
+@media (max-width:375px) {
+  .Contato {
+      width: 100%;
+  }
 }

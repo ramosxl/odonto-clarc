@@ -19,7 +19,9 @@ export default function Login() {
         <h1>Login ADM</h1>
         <input type="text" className="text" placeholder="Login" />
         <input type="password" className="text" placeholder="Senha" />
+        <Link to='/adm/painel'>
         <button type="button" className='enviar'>Entrar</button>
+        </Link>
       </div>
       <FooterADM />
     </div>

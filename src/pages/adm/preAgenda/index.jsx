@@ -13,25 +13,11 @@ const agendamentos = [
 
 export default function PreAgenda() {
   const [minDate, setMinDate] = useState('');
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [newHorario, setNewHorario] = useState('');
-  const [newData, setNewData] = useState('');
-  const [selectedPaciente, setSelectedPaciente] = useState(null);
 
   useEffect(() => {
     const today = new Date().toISOString().split('T')[0];
     setMinDate(today);
   }, []);
-
-  const handleAddAgendamento = () => {
-    if (newHorario && newData) {
-      // Aqui você pode adicionar a lógica para salvar o novo agendamento
-      console.log(`Agendamento adicionado: ${selectedPaciente.nome}, ${newHorario}, ${newData}`);
-      setIsModalOpen(false);
-      setNewHorario('');
-      setNewData('');
-    }
-  };
 
   const defaultMessage = `Olá, sou da OdontoClarc! Estou aqui para agendar sua consulta.`;
 
@@ -51,8 +37,7 @@ export default function PreAgenda() {
               <th>Nome</th>
               <th>Telefone</th>
               <th>Horário</th>
-              <th>Agendamento</th>
-              <th>Ações</th>
+              <th>Data</th>
             </tr>
           </thead>
           <tbody>
@@ -71,52 +56,15 @@ export default function PreAgenda() {
                   </td>
                   <td>{agendamento.horario}</td>
                   <td>{agendamento.data}</td>
-                  <td>
-                    <button onClick={() => { setSelectedPaciente(agendamento); setIsModalOpen(true); }}>
-                      Adicionar Agendamento
-                    </button>
-                  </td>
                 </tr>
               ))
             ) : (
               <tr>
-                <td colSpan="5">Nenhum agendamento disponível</td>
+                <td colSpan="4">Nenhum agendamento disponível</td>
               </tr>
             )}
           </tbody>
         </table>
-
-        {/* Modal */}
-        {isModalOpen && (
-          <div className="modal">
-            <div className="modal-content">
-              <span className="close" onClick={() => setIsModalOpen(false)}>&times;</span>
-              <h2>Adicionar Agendamento para {selectedPaciente?.nome}</h2>
-              <label>
-                Horário:
-                <input
-                  type="time"
-                  value={newHorario}
-                  onChange={(e) => setNewHorario(e.target.value)}
-                  min="08:00"
-                  max="17:00"
-                  required
-                />
-              </label>
-              <label>
-                Data:
-                <input
-                  type="date"
-                  value={newData}
-                  onChange={(e) => setNewData(e.target.value)}
-                  min={minDate}
-                  required
-                />
-              </label>
-              <button onClick={handleAddAgendamento}>Salvar Agendamento</button>
-            </div>
-          </div>
-        )}
       </div>
 
       <FooterADM />

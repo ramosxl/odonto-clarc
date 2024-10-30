@@ -26,9 +26,8 @@ export default function PreAgenda() {
 
   const defaultMessage = `Olá, gostaria de confirmar o seu agendamento para o dia ${selectedDate}.`;
 
-
   return (
-    <div className="preAgenda">
+    <div className="agenda">
       <Cabecalho_ADM />
       <button type="button" className="voltar">
         <Link to="/adm/painel">
@@ -36,7 +35,7 @@ export default function PreAgenda() {
         </Link>
       </button>
       <div className="fundo">
-        <h2>Pré-Agendamentos</h2>
+        <h2>Consultas Marcadas</h2>
         <input
           type="date"
           className="data"
@@ -44,6 +43,9 @@ export default function PreAgenda() {
           value={selectedDate}
           onChange={(e) => setSelectedDate(e.target.value)}
         />
+        <button className="adicionar-agendamento">
+          <Link to="/adm/adicionar-agendamento">Adicionar Agendamento</Link>
+        </button>
         <table>
           <thead>
             <tr>
@@ -58,17 +60,15 @@ export default function PreAgenda() {
               filteredAgendamentos.map((agendamento, index) => (
                 <tr key={index}>
                   <td>{agendamento.nome}</td>
-                  
+                  <td className="telefone">
                     <a
                       href={`https://wa.me/${agendamento.telefone}?text=${encodeURIComponent(defaultMessage)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <td className='telefone'>
                       {agendamento.telefone}
-                      </td>
                     </a>
-                  
+                  </td>
                   <td>{agendamento.horario}</td>
                   <td>{agendamento.data}</td>
                 </tr>
@@ -81,7 +81,6 @@ export default function PreAgenda() {
           </tbody>
         </table>
       </div>
-
       <FooterADM />
     </div>
   );

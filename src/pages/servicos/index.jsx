@@ -5,8 +5,6 @@ import Footer from '../../components/footer';
 import Zap from '../../components/whatsapp/index.jsx';
 
 export default function Servicos() {
-  const itens = ['Canal', 'Extração', 'Ortodontia', 'Limpeza', 'Clareamento', 'Implante', 'Próteses', 'Restauração', 'Cirurgia'];
-
   return (
     <div className="Servicos">
       <Cabecalho />
@@ -15,15 +13,19 @@ export default function Servicos() {
       </div>
       <div className="itens">
         <div className="lista">
-          {itens.map((item, index) => (
-            <div key={index} className="lista-item">
-              {item}
-            </div>
-          ))}
+          <div className="lista-item">Canal</div>
+          <div className="lista-item">Extração</div>
+          <div className="lista-item">Ortodontia</div>
+          <div className="lista-item">Limpeza</div>
+          <div className="lista-item">Clareamento</div>
+          <div className="lista-item">Implante</div>
+          <div className="lista-item">Próteses</div>
+          <div className="lista-item">Restauração</div>
+          <div className="lista-item">Cirurgia</div>
         </div>
       </div>
       <Footer />
-      <Zap/>
+      <Zap />
     </div>
   );
 }

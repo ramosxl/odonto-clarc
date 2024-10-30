@@ -1,14 +1,31 @@
-botão de voltar para a pagina anterior
-links dos serviços
+botão de voltar para a pagina anterior -- /*Qual página???*/
 
-Responsividade abaixo de 375
+links dos serviços -- /*Não vai dar pra fazer isso aqui antes da sexta-feira, mas vou deixar aqui para lembrar que preciso fazer isso.*/
 
-O input der mensagem ta dando problema no 1024
+Responsividade abaixo de 375 -- /*Quem tem esse tamnho de tela?*/
 
-Responsividade pages ADM
+O input de mensagem ta dando problema no 1024 -- /*O Silas usou o mesmo input, então vou pedir ajuda para ele.*/
 
-Arrumar Table do preAgenda
+/*Tenho que pedir ajuda do Silas na responsividade da page de Serviços tbm.*/
 
-Ver como vai fazer a Agenda e pacientes
+Responsividade pages ADM  -- /*Vou fazer amanhã.*/
 
-Arrumar todos os botões seguindo o botão do cabeçalho
+Arrumar Table do preAgenda -- /*Santo ChatGPT, o que eu faço?*/
+
+Ver como vai fazer a Agenda e pacientes -- /*AAAAAAAAAAA, EU SOU DESIGNER, NÃO SOU PROGRAMADOR!!!*/
+
+/*Pq eu escolhi informática?*/
+
+Arrumar todos os botões seguindo o botão do cabeçalho -- /*Isso é fácil, mas bateu uma pregriça, vou fazer isso depois.*/
+
+Responsividade do cabeçalho -- /*Amanhã.*/
+
+/*O bgl de da preAgenda que eu coloquei de filtrar seria mais util na agenda*/
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+VAI CORINTHIANS !!! 
+APPLE PIE DO TRAVIS SCOTT É MUITO BOM!!!
+
+"Eu tô tentando"
+ass: Kohi

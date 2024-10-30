@@ -6,7 +6,7 @@ import FooterADM from '../../../components/footerAdm/index.jsx';
 import { IoChevronBackOutline } from "react-icons/io5";
 
 const agendamentos = [
-  { nome: "João Silva", telefone: "5512345678", horario: "10:00", data: "2024-10-31" },
+  { nome: "João Silva", telefone: "5512345678", horario: "16:00", data: "2024-11-01" },
   { nome: "Maria Oliveira", telefone: "5511914817025", horario: "11:00", data: "2024-10-31" },
   { nome: "Pedro Santos", telefone: "5545678901", horario: "14:00", data: "2024-10-31" },
 ];
@@ -29,11 +29,11 @@ export default function PreAgenda() {
   return (
     <div className="agenda">
       <Cabecalho_ADM />
-      <button type="button" className="voltar">
-        <Link to="/adm/painel">
-          <IoChevronBackOutline /> Voltar
-        </Link>
+      <Link to="/adm/painel">
+      <button type="button" className='voltar'>
+        <IoChevronBackOutline />Voltar
       </button>
+      </Link>
       <div className="fundo">
         <h2>Consultas Marcadas</h2>
         <input

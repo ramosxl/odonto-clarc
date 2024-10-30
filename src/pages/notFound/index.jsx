@@ -12,11 +12,10 @@ export default function NotFound() {
       <h1>404</h1>
       <p>Página Não Encontrada</p>
       
-      <button className='voltar'>
+      
       <Link to="/">
       Voltar para a página inicial
       </Link>
-      </button>
     </div>
   );
 }

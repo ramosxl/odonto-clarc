@@ -6,7 +6,7 @@ Responsividade abaixo de 375 -- /*Quem tem esse tamanho de tela?*/
 
 O input de mensagem ta dando problema no 1024 -- /*O Silas usou o mesmo input, então vou pedir ajuda para ele.*/
 
-/*Tenho que pedir ajuda do Silas na responsividade da page de Serviços tbm.*/
+/*Responsividade da page de Serviços tbm.*/
 
 /*Pq eu escolhi informática?*/
 

@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import Footer from '../../components/footer/index.jsx';
 import { IoChevronBackOutline } from "react-icons/io5";
 import Zap from '../../components/whatsapp/index.jsx';
-import Voltar from '../../components/botaoVoltar/index.jsx';
 
 export default function Contato() {
 
@@ -21,11 +20,9 @@ export default function Contato() {
   return (
     <div className="Contato">
       <Cabecalho />
-      <button type="button" className='voltar'>
-        <Link to="/">
-          <IoChevronBackOutline />Voltar
-        </Link>
-      </button>
+      <Link to="/">
+      <button type="button" className='voltar'><IoChevronBackOutline />Voltar</button>
+      </Link>
       <div className="fundo">
         <div className="esq">
           <input type="text" className="text" placeholder="Nome" />

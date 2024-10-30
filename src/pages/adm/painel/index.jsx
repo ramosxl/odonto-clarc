@@ -20,7 +20,6 @@
           <h1>Painel Administrativo</h1> 
           <Link to='/adm/preagendamentos'><button type='button' className='botao'>Gerenciar Pré-agendamentos</button></Link>
           <Link to='/adm/agenda'><button type='button' className='botao'>Gerenciar Agenda</button></Link>
-          <Link to='/adm/pacientes'><button type='button' className='botao'>Gerenciar Pacientes Cadastrados</button></Link>
         </div>
         <FooterADM />
       </div>

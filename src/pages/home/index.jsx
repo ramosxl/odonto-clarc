@@ -11,9 +11,10 @@ export default function App() {
   return (
     <div className="App">
       <Cabecalho></Cabecalho>
-      <section className='slider'>
+      <div className="slider">
         <img src="/assets/images/odont1.jpg" alt="" />
-      </section>
+      </div>
+    
       <div className="faixa">
         <h1>Nossos Serviços</h1>
       </div>

@@ -6,9 +6,16 @@
   import Footer from '../../../components/footer/index.jsx';
   import FooterADM from '../../../components/footerAdm/index.jsx';
   import { IoChevronBackOutline } from "react-icons/io5";
+  import { useNavigate } from 'react-router-dom';
 
 
   export default function Painel() {
+    const navigate = useNavigate();
+
+    async function sair() {
+      localStorage.setItem('USUARIO', null)
+      navigate('/')
+  }
     return (
       <div className="painel">
         <Cabecalho_ADM />

@@ -26,7 +26,7 @@ export default function Footer(){
           </div>
           <Link to='/contato'>
           <div className='agende'>
-            <a href="">Agende Sua Pré Avaliação</a>
+            Agende Sua Pré Avaliação
           </div>
           </Link>
         </div>

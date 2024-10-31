@@ -52,6 +52,9 @@
         align-items: center;
 
         font-size: larger;
+        .imagem-mobile{
+            display: none;
+        }
 
         p{
             font-size: 24px;
@@ -115,6 +118,19 @@
             }
             img{
                 width: 60vw;
+            }
+        }
+        .secao2{
+            flex-direction: column;
+            p{
+                padding: 20px;
+                text-align: center;
+            }
+            .imagem-mobile{
+                display: flex;
+            }
+            .imagem-desktop{
+                display: none;
             }
         }
     }

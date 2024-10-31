@@ -16,18 +16,12 @@ export default function Login_ADM() {
   const [erro, setErro] = useState('');
 
   const navigate = useNavigate();
-
-  async function sair() {
-    localStorage.setItem('USUARIO', null)
-    navigate('/')
-}
-  async function entrar(){
   
+  async function entrar(){
+    
     const paramUser = {
-
       "Login": Login,
       "Senha": Senha
-
     }
 
     const url = `http://localhost:5010/entrar/`;
@@ -39,10 +33,9 @@ export default function Login_ADM() {
     else{
 
       localStorage.setItem('USUARIO', resp.data.token);
-      navigate('/adm/painel');
+      navigate('/adm-painel');
 
     }
-
   }
   return (
     <div className="Login">
@@ -67,7 +60,7 @@ export default function Login_ADM() {
             value={Senha}
             onChange={(e) => setSenha(e.target.value)}
           />
-          <button type="submit" className='enviar' onClick={entrar}>Entrar</button>
+          <button className='enviar' onClick={entrar}>Entrar</button>
         </form>
         {erro && <p style={{ color: 'red' }}>{erro}</p>}
       </div>

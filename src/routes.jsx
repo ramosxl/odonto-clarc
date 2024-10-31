@@ -28,10 +28,10 @@ export default function Rotas() {
 
         {/* ADM */}
 
-        <Route path='/adm/login' element={<Login />} />
-        <Route path='/adm/painel' element={<Painel />} />
-        <Route path='/adm/preagendamentos' element={<PreAgenda />} /> 
-        <Route path='/adm/agenda' element={<Agenda />} />
+        <Route path='/adm-login' element={<Login />} />
+        <Route path='/adm-painel' element={<Painel />} />
+        <Route path='/adm-preagendamentos' element={<PreAgenda />} /> 
+        <Route path='/adm-agenda' element={<Agenda />} />
       </Routes>
     </Router>
   );

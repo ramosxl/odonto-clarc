@@ -1,4 +1,7 @@
 .Login {
+  a{
+    text-decoration: none;
+  }
   .voltar {
     display: flex;
     text-decoration: none;
@@ -26,6 +29,13 @@
   }
 
   .fundo {
+    form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 75%;
+    }
     background-color: #eeeeee;
     margin: 80px auto;
     border-radius: 30px;
@@ -49,7 +59,7 @@
 
 
     input {
-      width: 85%;
+      width: 100%;
       max-width: 400px;
       padding: 15px;
       margin-bottom: 15px;
@@ -79,7 +89,7 @@
   }
 }
 
-@media (max-width:1024px) {
+@media (max-width:1035px) {
   .Login {
       width: 100%;
   }

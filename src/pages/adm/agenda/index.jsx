@@ -29,7 +29,7 @@ export default function PreAgenda() {
   return (
     <div className="agenda">
       <Cabecalho_ADM />
-      <Link to="/adm/painel">
+      <Link to="/adm-painel">
       <button type="button" className='voltar'>
         <IoChevronBackOutline />Voltar
       </button>

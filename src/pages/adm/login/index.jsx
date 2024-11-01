@@ -5,9 +5,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import FooterADM from '../../../components/footerAdm/index.jsx';
 import { IoChevronBackOutline } from "react-icons/io5";
 import axios from 'axios';
-import Painel from '../painel/index.jsx';
-
-
 
 export default function Login_ADM() {
 
@@ -45,7 +42,6 @@ export default function Login_ADM() {
       </Link>
       <div className="fundo">
         <h1>Login ADM</h1>
-        <form onSubmit={entrar}>
           <input
             type="text"
             className="text"
@@ -61,8 +57,7 @@ export default function Login_ADM() {
             onChange={(e) => setSenha(e.target.value)}
           />
           <button className='enviar' onClick={entrar}>Entrar</button>
-        </form>
-        {erro && <p style={{ color: 'red' }}>{erro}</p>}
+        
       </div>
       <FooterADM />
     </div>

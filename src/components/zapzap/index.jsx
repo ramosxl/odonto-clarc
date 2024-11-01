@@ -7,7 +7,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 export default function Zap(){
 
-  const numero = "5511914817025"; 
+  const numero = "5511998399386"; 
   const mensagem = "Olá! Gostaria de mais informações."; 
   const encodedMessage = encodeURIComponent(mensagem); 
 

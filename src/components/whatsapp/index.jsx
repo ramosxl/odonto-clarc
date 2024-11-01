@@ -12,10 +12,12 @@ export default function Zap(){
   const encodedMessage = encodeURIComponent(mensagem); 
 
   return (
-    <div className="zap">
-        <Link to={`https://wa.me/${numero}?text=${encodedMessage}`} target="_blank" rel="noopener noreferrer">
-            <FaWhatsapp/>
-        </Link>
+    <div className="conteiner">
+    <Link to={`https://wa.me/${numero}?text=${encodedMessage}`} target="_blank" rel="noopener noreferrer">
+      <div className="zap">   
+        <FaWhatsapp/>
+      </div>
+    </Link>
     </div>
   );
 };

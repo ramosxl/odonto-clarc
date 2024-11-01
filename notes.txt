@@ -1,2 +1,23 @@
-botão de voltar para a pagina anterior
-links dos serviços
+botão de voltar para a pagina anterior -- /*Qual página???*/
+
+links dos serviços -- /*Não vai dar pra fazer isso aqui antes da sexta-feira, mas vou deixar aqui para lembrar que preciso fazer.*/
+
+Responsividade abaixo de 375 -- /*Quem tem esse tamanho de tela?*/
+
+O input de mensagem ta dando problema no 1024 -- /*O Silas usou o mesmo input, então vou pedir ajuda para ele.*/
+
+/*Responsividade da page de Serviços tbm.*/
+
+/*Pq eu escolhi informática?*/
+
+Arrumar todos os botões seguindo o botão do cabeçalho -- /*Isso é fácil, mas bateu uma preguiça, vou fazer isso depois.*/
+
+Responsividade do cabeçalho -- /*Hoje.*/
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+VAI CORINTHIANS !!! 
+TRAVIS SCOTT É MUITO BOM!!!
+
+"Eu tô tentando"
+ass: Miguel A.K.A Kohi

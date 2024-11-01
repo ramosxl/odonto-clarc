@@ -1,8 +1,10 @@
 .footerADM {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ 
   padding: 60px;
   background-color: #414141;
+  margin-top: 100px;
 
   .esq {
     display: flex;
@@ -35,6 +37,17 @@
         padding-left: 10px;
         font-size: 16px;
       }
+    }
+  }
+}
+
+@media (max-width: 1030px) {
+  .footerADM {
+    padding: 30px;
+    grid-template-columns: 1fr;
+    .dir{
+      align-items: start;
+      padding: 10px 0;
     }
   }
 }

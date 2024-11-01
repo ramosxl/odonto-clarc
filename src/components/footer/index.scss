@@ -1,92 +1,164 @@
 .footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 40px;
   background-color: #02445c;
-
-  .esq {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    img {
-      width: 200px;
-    }
-
-    .social-icons {
-      display: flex;
-      padding: 10px 0;
-      gap: 50px;
-      margin: 10px 0;
-
-      .social {
-        display: flex;
-        background-color: #02445c;
-        border: 2px solid #ffffff;
-        height: 42px;
-        width: 42px;
-        text-align: center;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-
-        border-radius: 50%;
-        font-size: 20px;
-        color: #ffffff;
+  color: #fff;
+  text-decoration: none;
+  .content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem 3.5rem;
+    
+    .esq{
+      a{
         text-decoration: none;
-        transition: background-color 0.5s, color 0.5s, transform 0.5s, box-shadow 0.5s;
       }
+      img{
+        width: 250px;
+        margin-bottom: 20px;
+      }
+      .social{
+        display: flex;
+        gap: 15%;
+        .social-icon{
+          height: 2.5rem;
+          width: 2.5rem;
+          color: #02445c;
+          background-color: #fff;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: 0.5s;
 
-      .social:hover {
+          font-size: 1.10rem;
+          &:hover{
+            opacity: 0.7;
+            
+            transform: scale(1.05);
+          }
+        }
+      }
+      .agende {
         background-color: #ffffff;
         color: #02445c;
-        transform: scale(1.05);
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-      }
-    }
+        border-radius: 50px;
+        text-align: center;
+        margin-top: 20px;
+        width: 55%;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+        
+          color: #02445c;
+          text-decoration: none;
+        
 
-    a {
-      text-decoration: none;
-    }
-
-    .agendar {
-      background-color: #ffffff;
-      font-weight: bold;
-      color: #02445c;
-      border-radius: 50px;
-      padding: 15px;
-      text-decoration: none;
-      margin-top: 30px;
-      text-align: center;
-      width: 30vh;
-      transition: transform 0.5s, box-shadow 0.5s;
-
-      &:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        &:hover {
+          transform: scale(1.08);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
       }
     }
   }
-
-  .dir {
-    color: #fff;
-    font-size: 20px;
+  .lista{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 0 80px;
+    gap: 15px;
+    list-style: none;
+    
 
-    .endereco,
-    .telefone {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-
-      p {
-        margin: 0;
-        padding-left: 10px;
-        font-size: 16px;
-      }
+    a {
+      color: #fff;
+      text-decoration: none;
     }
+  }
+  .contato{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    .adm{
+      color: #fff;
+      text-decoration: none;
+    }
+    .number{
+      svg{
+        margin-right: 10px
+      }
+      a{
+        color: #fff;
+        text-decoration: none;
+      }
+      flex-direction: row;
+    }
+    .email{
+      svg{
+        margin-right: 10px
+      }
+      flex-direction: row;
+    }
+    iframe{
+      width: 250px;
+    }
+  }
+}
+
+@media (max-width:1440px) {
+  .footer {
+      width: 100%;
+  }
+}
+
+@media (max-width:1280px) {
+  .footer {
+      width: 100%;
+  }
+}
+
+@media (max-width:1024px) {
+  .footer {
+      width: 100%;
+  }
+}
+
+@media (max-width:912px) {
+  .footer {
+      width: 100%;
+      .content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+      }
+
+  }
+}
+
+@media (max-width:550px) {
+  .footer {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .content{
+      .lista{
+        display: none;
+      }
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem;
+    }
+  }
+}
+
+@media (max-width:430px) {
+  .footer {
+      width: 100%;
+  }
+}
+
+
+@media (max-width:375px) {
+  .footer {
+      width: 100%;
   }
 }

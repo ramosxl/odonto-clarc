@@ -1,66 +1,129 @@
-.Login{
-    .voltar{
-        display: flex;
-        text-decoration: none;
-        background-color: #71919C;
-        border: none;
-        color: #fff;
-        text-decoration: none;
-        text-align: center;
-        border-radius: 25px;
-        margin-top: 20px;
-        margin-left: 40px;
-        padding: 15px;
-        align-items: center;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-        font-weight: bold;
-        cursor: pointer;
-        
-        transition: 0.5s;
-        &:hover{
-            background-color: #66828b;
-            transition: background-color 0.5s, color 0.5s, transform 0.5s; 
-            transform: scale(1.05);
+.Login {
+  a{
+    text-decoration: none;
+  }
+  .voltar {
+    display: flex;
+    text-decoration: none;
+    background-color: #71919C;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-left: 40px;
+    padding: 15px;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.5s;
+
+    &:hover {
+      background-color: #66828b;
+      transition: background-color 0.5s, color 0.5s, transform 0.5s;
+      transform: scale(1.05);
+    }
+  }
+
+  .fundo {
+    form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 75%;
+    }
+    background-color: #eeeeee;
+    margin: 80px auto;
+    border-radius: 30px;
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+
+
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+
+
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      padding: 30px 0;
+    }
+
+
+
+    input {
+      width: 100%;
+      max-width: 400px;
+      padding: 15px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+      border: none;
+      outline: none;
+      border-radius: 25px;
+      transition: box-shadow 0.3s ease;
+      cursor: auto;
+
+      &:focus {
+        box-shadow: inset 0 -5px 5px rgba(255, 255, 255, 0.5), inset 0 5px 5px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+@media (max-width:1440px) {
+  .Login {
+      width: 100%;
+      
+  }
+}
+
+@media (max-width:1280px) {
+  .Login {
+      width: 100%;
+  }
+}
+
+@media (max-width:1035px) {
+  .Login {
+      width: 100%;
+  }
+}
+
+@media (max-width:912px) {
+  .Login {
+      width: 100%;
+      .fundo{
+        width: 70%;
+      }
+  }
+}
+
+@media (max-width:540px) {
+  .Login {
+      width: 100%;
+      .fundo{
+        h1{
+          font-size: 30px;
         }
       }
-    .fundo {
-        background-color: #eeeeee;
-        margin:80px auto;
-        border-radius: 30px;
-        display: flex;
-        height: 50vh; 
-        align-items: center;  
-        justify-content: center; 
-        width: 70vh;
-        
-    
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-        
-        
-          
-          flex-direction: column;
-          justify-content: center; 
-        h1{
-            padding: 30px 0;
-        } 
-          
-          
-          
-          input {
-              width: 100%;  
-              max-width: 400px; 
-              padding: 15px;
-              margin-bottom: 15px;
-              box-sizing: border-box;
-              border: none;
-              outline: none; 
-              border-radius: 25px;
-              transition: box-shadow 0.3s ease; 
-              cursor:auto;
-          
-              &:focus {
-                  box-shadow: inset 0 -5px 5px rgba(255, 255, 255, 0.5), inset 0 5px 5px rgba(0, 0, 0, 0.1); 
-              }
-          }
-        }
-    }
+  }
+}
+
+@media (max-width:430px) {
+  .Login {
+      width: 100%;
+  }
+}
+
+
+@media (max-width:375px) {
+  .Login {
+      width: 100%;
+  }
+}

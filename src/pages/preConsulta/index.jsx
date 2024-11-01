@@ -3,7 +3,7 @@ import Faixa from '../../components/faixa';
 import './index.scss';
 import { Link } from 'react-router-dom';
 import Footer from '../../components/footer/index.jsx';
-import Zap from '../../components/zapzap/index.jsx';
+import Zap from '../../components/whatsapp/index.jsx';
 
 export default function PreConsulta() {
   return (

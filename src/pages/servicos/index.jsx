@@ -1,22 +1,10 @@
-
-import React, { useState } from 'react';
+import React from 'react';
 import './index.scss'; 
 import Cabecalho from '../../components/cabecalho';
 import Footer from '../../components/footer';
-
+import Zap from '../../components/whatsapp/index.jsx';
 
 export default function Servicos() {
-  const [quantidade, setQuantidade] = useState(5); 
-  const itens = ['Canal', 'Extração', 'Ortodontia', 'Limpeza', 'Clareamento', 'Implante', 'Próteses', 'Restauração'];
-
-  const verMais = () => {
-    setQuantidade(prev => Math.min(prev + 3, itens.length));
-  };
-
-  const verMenos = () => {
-    setQuantidade(5); 
-  };
-
   return (
     <div className="Servicos">
       <Cabecalho />
@@ -24,27 +12,20 @@ export default function Servicos() {
         <h1>Serviços</h1>
       </div>
       <div className="itens">
-        <ul className="lista">
-          {itens.slice(0, quantidade).map((item, index) => (
-            <li key={index} className="lista-item">
-              {item}
-            </li>
-          ))}
-          {quantidade < itens.length && quantidade === 5 && (
-            <li className="lista-item ver-mais" onClick={verMais}>
-              Ver mais
-            </li>
-          )}
-          {quantidade >= 8 && (
-            <li className="lista-item ver-menos" onClick={verMenos}>
-              Ver menos
-            </li>
-          )}
-        </ul>
+        <div className="lista">
+          <div className="lista-item">Canal</div>
+          <div className="lista-item">Extração</div>
+          <div className="lista-item">Ortodontia</div>
+          <div className="lista-item">Limpeza</div>
+          <div className="lista-item">Clareamento</div>
+          <div className="lista-item">Implante</div>
+          <div className="lista-item">Próteses</div>
+          <div className="lista-item">Restauração</div>
+          <div className="lista-item">Cirurgia</div>
+        </div>
       </div>
       <Footer />
+      <Zap />
     </div>
   );
 }
-
-

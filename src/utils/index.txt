@@ -1,0 +1,42 @@
+@media (max-width:1440px) {
+    .Contato {
+        width: 100%;
+    }
+}
+
+@media (max-width:1280px) {
+    .Contato {
+        width: 100%;
+    }
+}
+
+@media (max-width:1024px) {
+    .Contato {
+        width: 100%;
+    }
+}
+
+@media (max-width:912px) {
+    .Contato {
+        width: 100%;
+    }
+}
+
+@media (max-width:540px) {
+    .Contato {
+        width: 100%;
+    }
+}
+
+@media (max-width:430px) {
+    .Contato {
+        width: 100%;
+    }
+}
+
+
+@media (max-width:375px) {
+    .Contato {
+        width: 100%;
+    }
+}

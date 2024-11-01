@@ -1,10 +1,12 @@
 .App{
-    .slider{
-        img{
-            width: 100%;
-            height: 80vh;
+    .slider {
+        img {
+          width: 100%;
+          height: 30vw; 
+          object-fit: cover; 
         }
-    }
+      }
+    
 
     .linha{
         ul{
@@ -20,11 +22,11 @@
                 padding: 45px;
             }
         }
-    }   
+    }
 
     .secao1{
         display: flex;
-        margin: 30px;
+        padding: 30px;
         align-items: center;
 
         font-size: larger;
@@ -46,10 +48,13 @@
 
     .secao2{
         display: flex;
-        margin: 30px;
+        padding: 30px;
         align-items: center;
 
         font-size: larger;
+        .imagem-mobile{
+            display: none;
+        }
 
         p{
             font-size: 24px;
@@ -59,6 +64,100 @@
         img{
             width: 48%;
             border-radius: 10px;
+        }
+    }
+}
+
+@media (max-width:1440px) {
+    .App {
+        width: 100vw;
+    }
+}
+
+@media (max-width:1280px) {
+    .App {
+        width: 100%;
+    }
+}
+
+@media (max-width:1024px) {
+    .App {
+        width: 100%;
+        .faixa{
+            font-size: 12px;
+            padding: 25px;
+        }
+        .slider{
+            img{
+                width: 100%;
+                height: 60vh;
+            }
+        }
+        width: 100%;
+        .secao1, .secao2{
+            
+            p{
+                font-size: 20px;
+                padding: 20px;
+               
+            }
+            img{
+                width: 50vw;
+            }
+        }
+    }
+}
+
+@media (max-width:912px) {
+    .App {
+        .secao1, .secao2{
+            flex-direction: column;
+            p{
+                padding: 20px;
+                text-align: center;
+            }
+            img{
+                width: 60vw;
+            }
+        }
+        .secao2{
+            flex-direction: column;
+            p{
+                padding: 20px;
+                text-align: center;
+            }
+            .imagem-mobile{
+                display: flex;
+            }
+            .imagem-desktop{
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:540px) {
+    .App {
+        
+    }
+}
+
+@media (max-width:430px) {
+    .App {
+        width: auto;
+    }
+}
+
+
+@media (max-width:375px) {
+    .App {
+        width: 100%;
+        .secao1{
+            p{
+                padding: 0;
+            }
         }
     }
 }
